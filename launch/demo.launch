@@ -1,13 +1,13 @@
 <launch>
 
   <!-- We launch the core reachy model and gazebo from reachy moveit config -->
-  <!-- <include file="$(find reachy_moveit_config)/launch/demo_gazebo.launch">  -->
-    <!-- <arg name="urdf_path" value="$(find reachy_moveit_config)/urdf/reachy_moveit.urdf"/>
-    <arg name="rviz_config" value="$(find reachy_gazebo_grasp)/demo1.rviz"/> --> 
-  <!-- </include> -->
+  <include file="$(find reachy_moveit_config)/launch/demo_gazebo.launch"> 
+    <!-- <arg name="urdf_path" value="$(find reachy_moveit_config)/urdf/reachy_moveit.urdf"/> -->
+    <!-- <arg name="rviz_config" value="$(find reachy_gazebo_grasp)/demo1.rviz"/> -->
+  </include>
 
-  <node name="gazebo" pkg="gazebo_ros" type="gazebo"
-    arg="$(find colab_reachy_approach)/worlds/lonely_world.world" respawn="false" output="screen" />
+  <!-- <node name="gazebo" pkg="gazebo_ros" type="gazebo"
+    arg="$(find colab_reachy_approach)/worlds/lonely_world.world" respawn="false" output="screen" /> -->
 
   <node name="gazebo_gui" pkg="gazebo_ros" type="gui" respawn="false" output="screen" />
 

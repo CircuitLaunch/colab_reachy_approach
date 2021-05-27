@@ -1,0 +1,21 @@
+<launch>
+  <arg name="camera_device" value="/dev/video2" />
+
+  <include file="$(find reachy_description)/launch/display.launch">
+      <arg name="model" value=""/>
+      <arg name="gui" value="False" />
+      <arg name="head" value="True" />
+      <arg name="left_arm" value="True" />
+      <arg name="right_arm" value="True" />
+  </include>
+
+
+  <!-- <include file="$(find colab_reachy_tf)/launch/tf.launch">
+      <arg name="launch_prefix" default="" /> 
+      <arg name="node_namespace" default="apriltag_ros_continuous_node" />
+      <arg name="camera_name" default="/camera_rect" />
+      <arg name="camera_frame" default="camera" />
+      <arg name="image_topic" default="image_rect" />
+      <arg name="camera_device" default="/dev/video2" />
+  </include> -->
+</launch>

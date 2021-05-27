@@ -1,0 +1,14 @@
+<launch>
+
+  <!-- We launch the core reachy model and gazebo from reachy moveit config -->
+  <include file="$(find reachy_moveit_config)/launch/demo.launch"> 
+    <!-- <arg name="urdf_path" value="$(find reachy_moveit_config)/urdf/reachy_moveit.urdf"/> -->
+    <!-- <arg name="rviz_config" value="$(find reachy_gazebo_grasp)/demo1.rviz"/> -->
+  </include>
+
+  <!-- <node name="gazebo_gui" pkg="gazebo_ros" type="gui" respawn="false" output="screen" /> -->
+
+  <include file="$(find colab_reachy_approach)/launch/spawn_objects.launch"/> 
+
+</launch>
+
