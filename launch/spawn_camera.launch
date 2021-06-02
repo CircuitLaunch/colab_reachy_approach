@@ -12,7 +12,6 @@
 
     <param name="robot_description" command="cat '$(arg robot_file)'"/>
 
-
     <param name="tf_prefix" value="camera"></param>
 
     <node name="$(arg robot_name)_spawn_urdf" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"

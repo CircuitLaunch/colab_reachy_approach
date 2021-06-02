@@ -1,0 +1,63 @@
+reachy:
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  r_shoulder_pitch_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: r_shoulder_pitch
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  r_shoulder_roll_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: r_shoulder_roll
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  r_arm_yaw_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: r_arm_yaw
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  r_elbow_pitch_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: r_elbow_pitch
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  r_forearm_yaw_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: r_forearm_yaw
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  r_wrist_pitch_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: r_wrist_pitch
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  r_wrist_roll_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: r_wrist_roll
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  l_shoulder_pitch_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: l_shoulder_pitch
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  l_shoulder_rollposition_controller:
+    type: effort_controllers/JointPositionController
+    joint: l_shoulder_roll
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  l_arm_yaw_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: l_arm_yaw
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  l_elbow_pitch_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: l_elbow_pitch
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  l_forearm_yaw_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: l_forearm_yaw
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  l_wrist_pitch_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: l_wrist_pitch
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  l_wrist_roll_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: l_wrist_roll
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+    
+    

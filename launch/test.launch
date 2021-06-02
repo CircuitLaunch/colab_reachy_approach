@@ -1,0 +1,28 @@
+<!-- HAD TO RUN rosrun gazebo_ros gazebo first and then this. SUCCESS -->
+<launch>
+  <param name="robot_description" command="cat '$(find colab_reachy_approach)'/urdf/reachy.urdf"/>
+
+
+<node name="test_urdf_spawner" pkg="gazebo_ros" type="spawn_model" output="screen"
+    args="-urdf -param robot_description -model reachy "/>
+
+  <!-- <rosparam file="$(find colab_reachy_approach)/config/reachy_control.yaml" command="load"/>
+
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="/reachy" args="r_shoulder_pitch_position_controller r_shoulder_roll_position_controller joint_state_controller"/>
+
+  <node name="rsp" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+    <remap from="/joint_states" to="/reachy/joint_states" />
+  </node> 
+ -->
+
+
+<!-- 
+
+  <include file="$(find colab_reachy_tf)/launch/tf.launch">
+    <arg name="camera_device" value="/dev/video2" />
+  </include> -->
+
+  <!-- <node pkg="tf" type="static_transform_publisher" name="apriltag_4" args="-0.05 0 -1 0 0 0 1 apriltag_4 pedestal 100" /> -->
+
+</launch>
